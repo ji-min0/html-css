@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자 입력 처리</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+    <title> 지민의 프로필</title>
+    <style>
+        *{
+            text-align: center;
+            font-family: "Hahmlet", serif;
+            font-optical-sizing: auto;
+            font-weight:400;
+            font-style: normal;
+        }
+        html{
+            background-color: #dadada;
+            font-size: 16px;
+        }
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        img{
+            width: 450px;
+            border-radius: 5%;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="name"></h1>
+    <p id="animal"></p>
+    <p id="fruit"></p>
+    <p id="hobby"></p>
+    <p id="song"></p>
+
+    <script>
+        const nameElement =  document.querySelector("#name")
+        let name = prompt("당신의 이름은?")
+        nameElement.textContent = name
+        
+        document.querySelector("#animal").textContent = `좋아하는 동물은 ${prompt("좋아하는 동물은?")}입니다!`
+        document.querySelector("#fruit").textContent = `좋아하는 과일은 ${prompt("좋아하는 과일은?")}입니다!`
+
+        const hobbyElement =  document.querySelector("#hobby")
+        let hobby = prompt("당신의 취미는?")
+        hobbyElement.textContent = `취미는 ${hobby}입니다!`
+
+        document.querySelector("#song").textContent = `좋아하는 곡은 ${prompt("좋아하는 곡은?")}입니다!`
+    </script>
+</body>
+</html>
