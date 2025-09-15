@@ -26,5 +26,10 @@ form.addEventListener("submit", function(event) {
     }
 
     /*가입 환영 메시지*/
-    document.body.innerHTML = `<h1>${userName}님 환영합니다!</h1>`
+    document.body.innerHTML = `
+        <h1>${userName}님 환영합니다!</h1>
+        <p><strong>아이디:</strong> ${userId}</p>
+        <p><strong>이름:</strong> ${userName}</p>
+        <p><strong>전화번호:</strong> ${userPhone}</p>
+        <p><strong>원하는 직무:</strong> ${userPosition}</p>`
 })
